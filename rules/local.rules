@@ -1,0 +1,15 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+alert tcp any any -> 192.168.0.101 22 (msg:"LOCAL Repeated SSH Connection Attempts"; flags:S; detection_filter:track by_src,count 5,seconds 30; sid:1000001; rev:2;)
+
+alert http any any -> 192.168.0.101 any (msg:"LOCAL Web Admin Probe"; http_uri; content:"/admin",nocase; sid:1000002; rev:2;)
+
+alert tcp any any -> 192.168.0.101 445 (msg:"LOCAL SMB Probe Detected"; flags:S; sid:1000003; rev:1;)
+
+alert tcp any any -> 192.168.0.101 3389 (msg:"LOCAL RDP Probe Detected"; flags:S; sid:1000004; rev:1;)
+
+
