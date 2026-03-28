@@ -1,0 +1,4 @@
+{"timestamp":"03/25-10:31:01.982890","proto":"TCP","src_ap":"192.168.0.147:56224","dst_ap":"192.168.0.101:445","rule":"1:1000003:1","msg":"LOCAL SMB Probe Detected","action":"allow"}
+{"timestamp":"03/25-10:31:01.978938","proto":"TCP","src_ap":"192.168.0.147:56224","dst_ap":"192.168.0.101:3389","rule":"1:1000004:1","msg":"LOCAL RDP Probe Detected","action":"allow"}
+{"timestamp":"03/25-10:35:13.811707","proto":"TCP","src_ap":"192.168.0.147:47770","dst_ap":"192.168.0.101:22","rule":"1:1000001:2","msg":"LOCAL Repeated SSH Connection Attempts","action":"allow"}
+{"timestamp":"03/25-10:31:01.981375","proto":"TCP","src_ap":"192.168.0.147:56224","dst_ap":"192.168.0.101:5900","rule":"122:1:1","msg":"(port_scan) TCP portscan","action":"allow"}
