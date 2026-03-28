@@ -6,6 +6,18 @@ This file explains the main alerts observed in the JSON evidence file generated 
 
 ---
 
+## Evidence File
+
+The main raw evidence file is:
+
+```text
+final_detection_evidence.json
+```
+
+This file contains JSON-formatted Snort alerts generated during controlled testing from a second machine within the same network.
+
+---
+
 ## Main Observed Alerts
 
 ### SMB Probe Detection
