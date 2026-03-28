@@ -45,6 +45,7 @@ notes and documentation
 evidence files with alert outputs
 Project Structure
 
+```text
 snort-ids-lab/
 ├── README.md
 ├── configs/
@@ -58,6 +59,7 @@ snort-ids-lab/
 └── evidence/
     └── json/
         └── evidence_explanation.md
+```
 
 Test Environment
 Sensor machine: Kali Linux with Snort installed
